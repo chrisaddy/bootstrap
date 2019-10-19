@@ -21,10 +21,11 @@ homebrew:
 	brew bundle
 
 vim:
-	cd $(HOME) && curl -o .vimrc $(github)/vimrc/master/.vimrc
+	rm -rf $(HOME)/.vimrc
+	cd $(HOME) && rm -rf vimrc && git clone https://github.com/chrisaddy/vimrc.git
+	ln -s $(HOME)/vimrc/.vimrc $(HOME)/.vimrc
 
 go:
-	ls
 
 node:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
