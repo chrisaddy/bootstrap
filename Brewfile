@@ -1,3 +1,16 @@
+brew "mahout" # Library to help build scalable machine learning libraries
+brew "make"
+brew "mailutils" # Swiss Army knife of email handling
+brew "mallet" # MAchine Learning for LanguagE Toolkit
+brew "man-db" # Unix documentation system
+brew "mandoc" # The mandoc UNIX manpage compiler toolset
+brew "mdp" # Command-line based markdown presentation tool
+brew "mdr" # Make diffs readable
+brew "lynx"
+brew "lsd"
+brew "logstash"
+brew "loc"
+brew "llvm"
 brew "ack"
 brew "agda"
 brew "ansible"
@@ -148,16 +161,51 @@ brew "kyua" # Testing framework for infrastructure software
 brew "launch" # Command-line launcher for macOS, in the spirit of `open`
 brew "lci" # Interpreter for the lambda calculus
 brew "ledger" # Command-line, double-entry accounting tool
+brew "miller" # Like sed, awk, cut, join & sort for name-indexed data such as CSV
+brew "mockserver" # Mock HTTP server and proxy
+brew "modd" # Flexible tool for responding to filesystem changes
+brew "nagios" # Network monitoring and management system
+brew "nagios-plugins" # Plugins for the nagios network monitoring system
+brew "naturaldocs" # Extensible, multi-language documentation generator
+brew "ncmpcpp" # Ncurses-based client for the Music Player Daemon
+brew "neofetch" # Fast, highly customisable system info script
+brew "newman" # Command-line collection runner for Postman
+brew "nload" # Realtime console network usage monitor
+brew "noti" # Trigger notifications when a process completes
+brew "notifiers" # The easy way to send notifications
+brew "nq" # Unix command-line queue utility
+brew "nushell"
 
-### games
-brew "lcs" # Satirical console-based political role-playing/strategy game
+### rss
+brew "newsboat"
+
+### email
+brew "mutt"
+brew "notmuch" # Thread-based email index, search, and tagging
+brew "opencv"
+brew "osxutils" # Collection of macOS command-line utilities
+brew "pandoc"
+brew "parallel"
+brew "parquet-tools" # Apache Parquet command-line tools and utilities
+
+
+### pdfs
+brew "pdf-redact-tools"
+brew "pdf2htmlex"
+brew "pdf2image"
+brew "pdf2json"
+brew "pdfgrep"
 
 ### docker
 brew "lazydocker" # The lazier way to manage everything docker
 
-### images/video
+### images/video/sound
 brew "leptonica"
 brew "imagemagick"
+brew "moc" # Terminal-based music player
+brew "mpc" # Command-line music player client for mpd
+brew "mpd" # Music Player Daemon
+brew "mps-youtube" # Terminal based YouTube player and downloader
 
 ### git/GitHub
 brew "kommit" # More detailed commit messages without committing!
@@ -170,6 +218,7 @@ brew "libevent" # Asynchronous event library
 ### Statistics/Algorithms
 brew "jags" # Just Another Gibbs Sampler for Bayesian MCMC simulation
 brew "lapack" # Linear Algebra PACKage
+brew "openblas"
 
 ### JSON
 brew "jq"
