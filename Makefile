@@ -1,6 +1,8 @@
-mac: git vim homebrew go python rust
+mac: git vim homebrew go node python
 
 xcode:
+	curl -o install-xcode https://raw.githubusercontent.com/chrisaddy/bootstrap/master/install-xcode
+	chmod +x install-xcode
 	./install-xcode
 
 git: xcode
@@ -16,6 +18,13 @@ vim:
 
 go:
 	ls
+
+node:
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+	export NVM_DIR="$HOME/.nvm" && \
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && \
+	nvm install node
+
 
 python:
 	pip3 install --upgrade pip
