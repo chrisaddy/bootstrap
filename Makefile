@@ -1,4 +1,5 @@
 github = https://raw.githubusercontent.com/chrisaddy
+GOPATH = $(HOME)/go-workspace
 
 mac: git homebrew zsh vim go node python
 
@@ -25,6 +26,10 @@ vim:
 	cd $(HOME) && rm -rf vimrc && git clone https://github.com/chrisaddy/vimrc.git
 	ln -s $(HOME)/vimrc/.vimrc $(HOME)/.vimrc
 
+
+go:
+	mkdir -p $(GOPATH) $(GOPATH)/src $(GOPATH)/pkg $(GOPATH)/bin
+
 node:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
 	curl https://www.npmjs.com/install.sh | sh
@@ -41,10 +46,13 @@ rust:
 
 
 update:
+	cd $(HOME)/vimrc && git pull origin master
 	brew bundle
 	# node
 	npm install npm@latest -g
 	#python
+	pip3 install --upgrade pip
+	pur -r requirements.txt
 	# rust
 	rustup self update
 	rustup update
