@@ -29,6 +29,7 @@ vim:
 
 go:
 	mkdir -p $(GOPATH) $(GOPATH)/src $(GOPATH)/pkg $(GOPATH)/bin
+	go get github.com/sparrc/gdm
 
 node:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
