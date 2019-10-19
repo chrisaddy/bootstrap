@@ -1,3 +1,32 @@
+brew "readosm" # Extract valid data from an Open Street Map input file
+brew "redis"
+brew "redpen" # Proofreading tool to help writers of technical documentation
+brew "redshift" # Adjust color temperature of your screen according to your surroundings
+brew "remarshal" # Convert between TOML, YAML and JSON
+brew "remind" # Sophisticated calendar and alarm
+brew "resty" # Command-line REST client that can be used in pipelines
+brew "reimann" # Event stream processor
+brew "rkhunter" # Rootkit hunter
+brew "robodoc" # Source code documentation tool
+brew "rolldice"
+brew "roundup" # Unit testing tool
+brew "rtv" # Command-line Reddit client
+brew "sceptre" # Build better AWS infrastructure
+brew "react-native-cli"
+brew "sendemail" # Email program for sending SMTP mail
+brew "serverless"
+brew "shellcheck" # Static analysis and lint tool, for (ba)sh scripts
+brew "presto" # Distributed SQL query engine for big data
+brew "shogun" # Large scale machine learning toolbox
+brew "shpotify" # Command-line interface for Spotify on a Mac
+brew "snakemake" # Pythonic workflow system
+brew "snag" # Automatic build tool for all your needs
+brew "sshrc" # Bring your .bashrc, .vimrc, etc. with you when you SSH
+brew "starship" # The cross-shell prompt for astronauts
+brew "r"
+brew "pre-commit" # Framework for managing multi-language pre-commit hooks
+brew "postgresql"
+brew "pokerstove" # Poker evaluation and enumeration software
 brew "mahout" # Library to help build scalable machine learning libraries
 brew "make"
 brew "mailutils" # Swiss Army knife of email handling
