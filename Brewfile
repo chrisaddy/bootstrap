@@ -1,3 +1,11 @@
+brew "wifi-password"
+brew "zsh-git-prompt"
+brew "zsh-lovers"
+brew "zsh-navigation-tools"
+brew "zsh-syntax-highlighting"
+brew "zzz" # Command-line tool to put Macs to sleep
+brew "tree" # Display directories as trees (with optional color/HTML output)
+brew install "w3m"
 brew "readosm" # Extract valid data from an Open Street Map input file
 brew "redis"
 brew "redpen" # Proofreading tool to help writers of technical documentation
@@ -203,7 +211,23 @@ brew "nload" # Realtime console network usage monitor
 brew "noti" # Trigger notifications when a process completes
 brew "notifiers" # The easy way to send notifications
 brew "nq" # Unix command-line queue utility
+brew "terraform"
+brew "terraform-docs" # CLI tool to generate terraform files from existing infrastructure
+brew "terraforming" # Export existing AWS resources to Terraform style (tf, tfstate)
+brew "terrahub" # Terraform automation and orchestration tool
+brew "tflint" # terraform lint
+brew "tesseract"
+brew "tesseract-lang"
+
+
+## terminal/shell
 brew "nushell"
+brew "terminator"
+brew "termrec" # Record videos of terminal output
+
+### documentation
+brew "tealdeer"
+
 
 ### rss
 brew "newsboat"
@@ -267,4 +291,12 @@ brew "jupyter" # Interactive environments for writing and running code
 ### TO-DO/NOTES
 brew "joplin" # Note taking and to-do application with synchronisation capabilities
 brew "jrnl" # Command-line note taker
-
+brew "task" # Feature-rich console based todo list manager
+brew "task-spooler" # Batch system to run tasks one after another
+brew "taskd" # Client-server synchronization for todo lists
+brew "taskell" # Command-line Kanban board/task manager with support for Trello
+brew "timewarrior" # Command-line time tracking application
+brew "todo-txt" # Minimal, todo.txt-focused editor
+brew "tnote" # Small note-taking program for the terminal
+brew "todoman" # Simple CalDAV-based todo manager
+brew "when" # Tiny personal calendar
