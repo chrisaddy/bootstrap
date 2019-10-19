@@ -33,3 +33,5 @@ fire
 flashtext
 luminoth
 pur
+flake8
+flawfinder

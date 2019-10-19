@@ -49,7 +49,22 @@ brew "diff-pdf"
 brew "diff-so-fancy"
 brew "docker"
 brew "docker-clean"
+brew "dpkg"
+brew "dungeon"
+brew "elixir"
 brew "elasticsearch"
+brew "emojify"
+brew "eprover" # Theorem prover for full first-order logic with equality
+brew "euler-py" # Project Euler command-line tool written in Python
+brew "fasttext" # Library for fast text representation and classification
+brew "feh" # X11 image viewer
+brew "fetchmail" # Fetch mail from a POP, IMAP, ETRN, or ODMR-capable server
+brew "ffmpeg" # Play, record, convert, and stream audio and video
+brew "firebase-cli" # Firebase command-line tools
+brew "flex" # Fast Lexical Analyzer, generates Scanners (tokenizers)
+brew "fortune" # fortune cookies
+brew "frugal" # Cross language code generator for creating scalable microservices
+brew "fswatch" # Monitor a directory for changes and run a shell command
 brew "hugo"
 brew "kibana"
 brew "neovim"
