@@ -65,6 +65,12 @@ brew "flex" # Fast Lexical Analyzer, generates Scanners (tokenizers)
 brew "fortune" # fortune cookies
 brew "frugal" # Cross language code generator for creating scalable microservices
 brew "fswatch" # Monitor a directory for changes and run a shell command
+brew "galen" # Automated testing of look and feel for responsive websites
+brew "gambit" # Software tools for game theory
+brew "gatsby-cli"
+brew "gaul" # Genetic Algorithm Utility Library
+brew "gcc"
+brew "gdb"
 brew "hugo"
 brew "kibana"
 brew "neovim"
