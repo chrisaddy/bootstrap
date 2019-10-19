@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo checking >/dev/null 2>&1
+echo checking &>/dev/null
 xcode-select -p
 if [[ $? != 0 ]]; then
   echo xcode not installed, installing now
