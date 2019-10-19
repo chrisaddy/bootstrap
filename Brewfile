@@ -136,3 +136,52 @@ brew "imessage-ruby" # Command-line tool to send iMessage"
 brew "immortal" # OS agnostic (*nix) cross-platform supervisor
 brew "iniparser" # Library for parsing ini files
 brew "Program for recording a UNIX terminal session" # ipbt
+brew "iso-codes" # Provides lists of various ISO standards
+brew "ivy" # Agile dependency manager
+brew "juju" # DevOps management tool
+brew "juju-wait" # Juju plugin for waiting for deployments to settle
+brew "jump" # Helps you navigate your file system faster by learning your habits
+brew "just" # Handy way to save and run project-specific commands
+brew "k6" # Modern load testing tool, using Go and JavaScript
+brew "khal" # CLI calendar application
+brew "kqwait" # Wait for events on files or directories on macOS
+brew "kyua" # Testing framework for infrastructure software
+brew "launch" # Command-line launcher for macOS, in the spirit of `open`
+brew "lci" # Interpreter for the lambda calculus
+brew "ledger" # Command-line, double-entry accounting tool
+
+### games
+brew "lcs" # Satirical console-based political role-playing/strategy game
+
+### docker
+brew "lazydocker" # The lazier way to manage everything docker
+
+
+### git/GitHub
+brew "kommit" # More detailed commit messages without committing!
+brew "lazygit" # Simple terminal UI for git commands
+brew "legit" # Command-line interface for Git, optimized for workflow simplicity
+
+
+### Statistics/Algorithms
+brew "jags" # Just Another Gibbs Sampler for Bayesian MCMC simulation
+brew "lapack" # Linear Algebra PACKage
+
+### JSON
+brew "jq"
+brew "jsawk" # Like awk, but for JSON, using JavaScript objects and arrays
+brew "jsonlint"
+brew "jsonnet"
+
+### JavaScript
+brew "eslint"
+brew "jsdoc3"
+brew "jsmin"
+
+### Python
+brew "jupyter" # Interactive environments for writing and running code
+
+### TO-DO/NOTES
+brew "joplin" # Note taking and to-do application with synchronisation capabilities
+brew "jrnl" # Command-line note taker
+
