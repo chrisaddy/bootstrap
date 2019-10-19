@@ -131,7 +131,6 @@ brew "hyperfine" # Command-line benchmarking tool
 brew "hyperscan" # High-performance regular expression matching library
 brew "icdiff" # Improved colored diff
 brew "ii" # Minimalist IRC client
-brew "imagemagick"
 brew "imessage-ruby" # Command-line tool to send iMessage"
 brew "immortal" # OS agnostic (*nix) cross-platform supervisor
 brew "iniparser" # Library for parsing ini files
@@ -156,12 +155,17 @@ brew "lcs" # Satirical console-based political role-playing/strategy game
 ### docker
 brew "lazydocker" # The lazier way to manage everything docker
 
+### images/video
+brew "leptonica"
+brew "imagemagick"
 
 ### git/GitHub
 brew "kommit" # More detailed commit messages without committing!
 brew "lazygit" # Simple terminal UI for git commands
 brew "legit" # Command-line interface for Git, optimized for workflow simplicity
-
+brew "lf" # Terminal file manager
+brew "libev" # Asynchronous event library
+brew "libevent" # Asynchronous event library
 
 ### Statistics/Algorithms
 brew "jags" # Just Another Gibbs Sampler for Bayesian MCMC simulation
@@ -177,6 +181,7 @@ brew "jsonnet"
 brew "eslint"
 brew "jsdoc3"
 brew "jsmin"
+brew "lerna" # Tool for managing JavaScript projects with multiple packages
 
 ### Python
 brew "jupyter" # Interactive environments for writing and running code

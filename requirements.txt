@@ -35,3 +35,4 @@ luminoth
 pur
 flake8
 flawfinder
+lightgbm
