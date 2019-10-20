@@ -1,3 +1,4 @@
+python-notify
 numpy
 pandas
 tensorflow

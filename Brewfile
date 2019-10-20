@@ -1,3 +1,14 @@
+# casks
+cask_args appdir: '/Applications'
+cask "google-chrome"
+cask "spotify"
+cask "alacritty"
+cask "virtualbox"
+cask "slack"
+cask "iterm2"
+
+tap "tap"
+brew "iterm2"
 brew "wifi-password"
 brew "zsh-git-prompt"
 brew "zsh-lovers"
