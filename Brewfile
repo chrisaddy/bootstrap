@@ -294,9 +294,18 @@ brew "jsdoc3"
 brew "jsmin"
 brew "lerna" # Tool for managing JavaScript projects with multiple packages
 
+### Python
+brew "jupyter" # Interactive environments for writing and running code
 
 ### TO-DO/NOTES
+brew "joplin" # Note taking and to-do application with synchronisation capabilities
+brew "jrnl" # Command-line note taker
+brew "task" # Feature-rich console based todo list manager
 brew "task-spooler" # Batch system to run tasks one after another
 brew "taskd" # Client-server synchronization for todo lists
+brew "taskell" # Command-line Kanban board/task manager with support for Trello
 brew "timewarrior" # Command-line time tracking application
+brew "todo-txt" # Minimal, todo.txt-focused editor
+brew "tnote" # Small note-taking program for the terminal
+brew "todoman" # Simple CalDAV-based todo manager
 brew "when" # Tiny personal calendar

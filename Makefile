@@ -1,11 +1,11 @@
 github = https://raw.githubusercontent.com/chrisaddy
 GOPATH = $(HOME)/go-workspace
 
-mac: git homebrew zsh dotfiles go node python
+mac: git homebrew dotfiles go node python
 
 zsh:
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-	cd $(HOME) && curl -o .zshrc $(github)/bootstrap/master/.zshrc
+	ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
 
 xcode:
 	curl -o install-xcode $(github)/bootstrap/master/install-xcode
@@ -16,12 +16,6 @@ git: xcode
 	git config --global github.username chrisaddy
 	git config --global user.email chris.william.addy@gmail.com
 
-alacritty:
-	curl -o install-alacritty $(github)/bootstrap/master/.install-alacritty
-	chmod +x install-alacritty
-	bash -c "./install-alacritty"
-
-
 
 homebrew:
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -30,12 +24,12 @@ homebrew:
 
 vim:
 	rm -rf $(HOME)/.vimrc
-	rm -rf $(HOME)/dotfiles
-	cd $(HOME) && git clone git@github.com:chrisaddy/dotfiles.git
 	ln -s $(HOME)/dotfiles/.vimrc $(HOME)/.vimrc
 	nvim +PlugInstall +qall
 
-dotfiles: alacritty vim
+dotfiles: zsh vim
+	rm -rf $(HOME)/dotfiles
+	cd $(HOME) && git clone git@github.com:chrisaddy/dotfiles.git
 
 
 go:
