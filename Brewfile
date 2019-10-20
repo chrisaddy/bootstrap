@@ -5,7 +5,7 @@ brew "zsh-navigation-tools"
 brew "zsh-syntax-highlighting"
 brew "zzz" # Command-line tool to put Macs to sleep
 brew "tree" # Display directories as trees (with optional color/HTML output)
-brew install "w3m"
+brew "w3m"
 brew "readosm" # Extract valid data from an Open Street Map input file
 brew "redis"
 brew "redpen" # Proofreading tool to help writers of technical documentation
