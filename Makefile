@@ -39,7 +39,7 @@ go:
 node:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
 	curl https://www.npmjs.com/install.sh | sh
-
+	cat node-requirements.txt | xargs npm install -g
 
 python:
 	pip3 install --upgrade pip

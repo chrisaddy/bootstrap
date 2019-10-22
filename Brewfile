@@ -183,7 +183,7 @@ brew "ii" # Minimalist IRC client
 brew "imessage-ruby" # Command-line tool to send iMessage"
 brew "immortal" # OS agnostic (*nix) cross-platform supervisor
 brew "iniparser" # Library for parsing ini files
-brew "Program for recording a UNIX terminal session" # ipbt
+brew "ipbt" # Program for recording a UNIX terminal session
 brew "iso-codes" # Provides lists of various ISO standards
 brew "ivy" # Agile dependency manager
 brew "juju" # DevOps management tool
