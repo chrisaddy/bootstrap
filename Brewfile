@@ -89,8 +89,6 @@ brew "clockywock"
 brew "cloud-watch"
 brew "cmake"
 brew "codequery"
-brew "coffeescript"
-brew "coq"
 brew "coreutils"
 brew "curl"
 brew "curl-openssl"
@@ -106,7 +104,6 @@ brew "dungeon"
 brew "elixir"
 brew "elasticsearch"
 brew "emojify"
-brew "eprover" # Theorem prover for full first-order logic with equality
 brew "euler-py" # Project Euler command-line tool written in Python
 brew "fasttext" # Library for fast text representation and classification
 brew "feh" # X11 image viewer
