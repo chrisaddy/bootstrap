@@ -1,6 +1,7 @@
 # casks
 cask_args appdir: '/Applications'
 cask "alacritty"
+cask "adoptopenjdk"
 
 tap "aws/tap"
 brew "aws-sam-cli"
