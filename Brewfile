@@ -2,6 +2,9 @@
 cask_args appdir: '/Applications'
 cask "alacritty"
 
+tap "aws/tap"
+brew "aws-sam-cli"
+
 brew "wifi-password"
 brew "zsh-git-prompt"
 brew "zsh-lovers"
@@ -60,7 +63,6 @@ brew "ask-cli"
 brew "automake"
 brew "awk"
 brew "aws-cfn-tools"
-brew "aws/tap/aws-sam-cli"
 brew "aws-shell"
 brew "awscli"
 brew "awslogs"
