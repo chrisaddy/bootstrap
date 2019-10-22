@@ -24,9 +24,7 @@ brew "rolldice"
 brew "roundup" # Unit testing tool
 brew "rtv" # Command-line Reddit client
 brew "sceptre" # Build better AWS infrastructure
-brew "react-native-cli"
 brew "sendemail" # Email program for sending SMTP mail
-brew "serverless"
 brew "shellcheck" # Static analysis and lint tool, for (ba)sh scripts
 brew "presto" # Distributed SQL query engine for big data
 brew "shogun" # Large scale machine learning toolbox
@@ -53,7 +51,6 @@ brew "logstash"
 brew "loc"
 brew "llvm"
 brew "ack"
-brew "agda"
 brew "ansible"
 brew "ansible-lint"
 brew "ansiweather"
@@ -63,7 +60,6 @@ brew "ask-cli"
 brew "automake"
 brew "autopep8"
 brew "awk"
-brew "aws-cdk"
 brew "aws-cfn-tools"
 brew "aws/tap/aws-sam-cli"
 brew "aws-shell"
@@ -80,7 +76,6 @@ brew "brew-cask-completion"
 brew "cabal-install"
 brew "calcurse"
 brew "cask"
-brew "chicken"
 brew "chrome-cli"
 brew "circleci"
 brew "clang-format"
@@ -124,7 +119,6 @@ brew "gdb"
 brew "gdrive" # Google Drive CLI Client
 brew "gearboy" # Nintendo Game Boy (Color) emulator
 brew "gearsystem" # Sega Master System / Game Gear / SG-1000 emulator
-brew "generate-json-scheme" # Generate a JSON Schema from Sample JSON
 brew "getmail" # Extensible mail retrieval system with POP3, IMAP4, SSL support
 brew "ghi" # Work on GitHub issues on the command-line
 brew "gist" # Command-line utility for uploading Gists
@@ -277,15 +271,6 @@ brew "jq"
 brew "jsawk" # Like awk, but for JSON, using JavaScript objects and arrays
 brew "jsonlint"
 brew "jsonnet"
-
-### JavaScript
-brew "eslint"
-brew "jsdoc3"
-brew "jsmin"
-brew "lerna" # Tool for managing JavaScript projects with multiple packages
-
-### Python
-brew "jupyter" # Interactive environments for writing and running code
 
 ### TO-DO/NOTES
 brew "joplin" # Note taking and to-do application with synchronisation capabilities

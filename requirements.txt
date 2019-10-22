@@ -37,3 +37,4 @@ pur
 flake8
 flawfinder
 lightgbm
+jupyterlab
