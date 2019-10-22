@@ -17,7 +17,7 @@ brew "redshift" # Adjust color temperature of your screen according to your surr
 brew "remarshal" # Convert between TOML, YAML and JSON
 brew "remind" # Sophisticated calendar and alarm
 brew "resty" # Command-line REST client that can be used in pipelines
-brew "reimann" # Event stream processor
+brew "riemann" # Event stream processor
 brew "rkhunter" # Rootkit hunter
 brew "robodoc" # Source code documentation tool
 brew "rolldice"
@@ -58,7 +58,6 @@ brew "apache-spark"
 brew "artifactory"
 brew "ask-cli"
 brew "automake"
-brew "autopep8"
 brew "awk"
 brew "aws-cfn-tools"
 brew "aws/tap/aws-sam-cli"
@@ -221,7 +220,6 @@ brew "termrec" # Record videos of terminal output
 ### documentation
 brew "tealdeer"
 
-
 ### rss
 brew "newsboat"
 
@@ -233,7 +231,6 @@ brew "osxutils" # Collection of macOS command-line utilities
 brew "pandoc"
 brew "parallel"
 brew "parquet-tools" # Apache Parquet command-line tools and utilities
-
 
 ### pdfs
 brew "pdf-redact-tools"

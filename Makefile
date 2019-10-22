@@ -31,7 +31,6 @@ dotfiles: zsh vim
 	rm -rf $(HOME)/dotfiles
 	cd $(HOME) && git clone git@github.com:chrisaddy/dotfiles.git
 
-
 go:
 	mkdir -p $(GOPATH) $(GOPATH)/src $(GOPATH)/pkg $(GOPATH)/bin
 	go get github.com/sparrc/gdm
