@@ -1,12 +1,7 @@
 # casks
 cask_args appdir: '/Applications'
-cask "google-chrome"
 cask "alacritty"
-# cask "slack"
-# cask "iterm2"
 
-tap "tap"
-brew "iterm2"
 brew "wifi-password"
 brew "zsh-git-prompt"
 brew "zsh-lovers"
@@ -91,8 +86,6 @@ brew "circleci"
 brew "clang-format"
 brew "cless"
 brew "clockywock"
-brew "clojure"
-brew "clojure-lsp"
 brew "cloud-watch"
 brew "cmake"
 brew "codequery"
