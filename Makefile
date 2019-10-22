@@ -5,6 +5,7 @@ mac: git homebrew dotfiles go node python
 
 zsh:
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+	rm -rf $(HOME)/.zshrc
 	ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
 
 xcode:
