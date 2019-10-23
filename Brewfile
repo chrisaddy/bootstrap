@@ -33,7 +33,6 @@ brew "shellcheck" # Static analysis and lint tool, for (ba)sh scripts
 brew "presto" # Distributed SQL query engine for big data
 brew "shogun" # Large scale machine learning toolbox
 brew "shpotify" # Command-line interface for Spotify on a Mac
-brew "snakemake" # Pythonic workflow system
 brew "snag" # Automatic build tool for all your needs
 brew "sshrc" # Bring your .bashrc, .vimrc, etc. with you when you SSH
 brew "starship" # The cross-shell prompt for astronauts
@@ -67,7 +66,6 @@ brew "aws-cfn-tools"
 brew "aws-shell"
 brew "awscli"
 brew "awslogs"
-brew "babel"
 brew "bash-completion@2"
 brew "bats"
 brew "binutils"

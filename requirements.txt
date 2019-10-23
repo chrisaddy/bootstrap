@@ -39,3 +39,4 @@ flake8
 flawfinder
 lightgbm
 jupyterlab
+snakemake
