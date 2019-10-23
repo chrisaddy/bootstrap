@@ -24,6 +24,8 @@ homebrew:
 	brew bundle
 
 vim:
+	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	rm -rf $(HOME)/.vimrc
 	ln -s $(HOME)/dotfiles/.vimrc $(HOME)/.vimrc
 	nvim +PlugInstall +qall
