@@ -1,4 +1,4 @@
-[source]]
+[[source]]
 url = 'https://pypi.python.org/simple'
 verify_ssl = true
 name = 'pypi'
@@ -7,7 +7,7 @@ name = 'pypi'
 python_version = '3.7'
 
 [packages]
-requests = { extras = ['socks'] }
+requests# = { extras = ['socks'] }
 autopep
 python-notify
 numpy
