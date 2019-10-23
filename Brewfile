@@ -97,7 +97,6 @@ brew "diff-so-fancy"
 brew "docker"
 brew "docker-clean"
 brew "dpkg"
-brew "dungeon"
 brew "elixir"
 brew "elasticsearch"
 brew "emojify"
@@ -106,7 +105,6 @@ brew "fasttext" # Library for fast text representation and classification
 brew "feh" # X11 image viewer
 brew "fetchmail" # Fetch mail from a POP, IMAP, ETRN, or ODMR-capable server
 brew "ffmpeg" # Play, record, convert, and stream audio and video
-brew "firebase-cli" # Firebase command-line tools
 brew "flex" # Fast Lexical Analyzer, generates Scanners (tokenizers)
 brew "fortune" # fortune cookies
 brew "frugal" # Cross language code generator for creating scalable microservices

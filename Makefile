@@ -21,13 +21,14 @@ git: xcode
 homebrew:
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	curl -o Brewfile $(github)/bootstrap/master/Brewfile
-	brew bundle
+	brew bundle cleanup --force
 
 vim:
-	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    		https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	rm -rf $(HOME)/.vimrc
-	ln -s $(HOME)/dotfiles/.vimrc $(HOME)/.vimrc
+	rm -rf $(HOME)/.config/nvim
+	mkdir -p $(HOME)/.config/nvim
+	ln -s $(HOME)/dotfiles/.vimrc $(HOME)/.config/nvim/init.vim
+	ln -s $(HOME)/.config/nvim/init.vim $(HOME)/.vimrc
 	nvim +PlugInstall +qall
 
 dotfiles: zsh vim
