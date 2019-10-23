@@ -45,9 +45,8 @@ node:
 	cat node-requirements.txt | xargs npm install -g
 
 python:
-	curl -o requirements.txt $(github)/bootstrap/master/requirements.txt
-	pip3 install --upgrade pip
-	pip3 install -r requirements.txt
+	curl -o Pipfile $(github)/bootstrap/master/Pipfile
+	pip install pipenv
 
 rust:
 	curl https://sh.rustup.rs -sSf | sh -s -- \

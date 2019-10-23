@@ -40,3 +40,4 @@ flawfinder
 lightgbm
 jupyterlab
 snakemake
+awscli
