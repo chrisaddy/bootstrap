@@ -1,7 +1,7 @@
 github = https://raw.githubusercontent.com/chrisaddy
 GOPATH = $(HOME)/go-workspace
 
-mac: git homebrew dotfiles go node python
+mac: git homebrew dotfiles go node python rust
 
 zsh:
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
@@ -45,8 +45,9 @@ node:
 	cat node-requirements.txt | xargs npm install -g
 
 python:
+	curl -o requirements.txt $(github)/bootstrap/master/requirements.txt
 	pip3 install --upgrade pip
-	pip3 install -q -r requirements.txt
+	pip3 install -r requirements.txt
 
 rust:
 	curl https://sh.rustup.rs -sSf | sh -s -- \
