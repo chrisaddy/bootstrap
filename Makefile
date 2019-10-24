@@ -1,7 +1,7 @@
 github = https://raw.githubusercontent.com/chrisaddy
 GOPATH = $(HOME)/go-workspace
 
-mac: git homebrew dotfiles go node python rust
+mac: git homebrew dotfiles go node python rust bin orgs
 
 zsh:
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
@@ -13,6 +13,8 @@ xcode:
 	bash -c "./install-xcode"
 
 git: xcode
+	rm -rf $(HOME)/.gitconfig
+	ln -s $(HOME)/dotfiles/.gitconfig $(HOME)/.gitconfig
 
 
 homebrew:
@@ -28,10 +30,11 @@ vim:
 	ln -s $(HOME)/.config/nvim/init.vim $(HOME)/.vimrc
 	nvim +PlugInstall +qall
 
-dotfiles: git zsh vim
+remove-dotfiles:
 	rm -rf $(HOME)/dotfiles
 	cd $(HOME) && git clone git@github.com:chrisaddy/dotfiles.git
-	rm -rf $(HOME)/.gitconfig && ln -s $(HOME)/dotfiles/.gitconfig
+
+dotfiles: remove-dotfiles git zsh vim link
 
 go:
 	mkdir -p $(GOPATH) $(GOPATH)/src $(GOPATH)/pkg $(GOPATH)/bin
@@ -50,6 +53,15 @@ rust:
 	curl https://sh.rustup.rs -sSf | sh -s -- \
 		--verbose --default-toolchain=nightly --profile=complete -y
 
+orgs:
+	rm -rf $(HOME)/orgs
+	cd $(HOME) && git clone git@github.com:chrisaddy/orgs.git
+
+bin:
+	rm -rf $(HOME)/bin
+	cd $(HOME) && git clone git@github.com:chrisaddy/bin.git
+
+
 update:
 	upgrade_oh_my_zsh
 	cd $(HOME)/dotfiles/.vimrc && git pull origin master
@@ -62,6 +74,12 @@ update:
 	# rust
 	rustup self update
 	rustup update
+
+backup:
+	git add .
+	git commit -m "backup $(shell date)"
+	git pull origin master
+	git push origin master
 
 revert:
 	rm Brewfile && touch Brewfile
