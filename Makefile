@@ -5,7 +5,7 @@ mac: git homebrew dotfiles go node python
 
 zsh:
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-	ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
+	rm $(HOME)/.zshrc && ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
 
 xcode:
 	curl -o install-xcode $(github)/bootstrap/master/install-xcode
@@ -21,6 +21,7 @@ homebrew:
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	curl -o Brewfile $(github)/bootstrap/master/Brewfile
 	brew bundle
+	brew bundle cleanup --force
 
 vim:
 	rm -rf $(HOME)/.vimrc
