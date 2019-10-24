@@ -1,0 +1,12 @@
+generate-schema
+serverless
+react-native-cli
+aws-cdk
+eslint
+jsmin
+lerna
+jsdoc
+firebase-tools
+@babel/core
+@babel/cli
+@babel/preset-env

@@ -1,0 +1,49 @@
+[[source]]
+url = 'https://pypi.python.org/simple'
+verify_ssl = true
+name = 'pypi'
+
+[requires]
+python_version = '3.7'
+
+[packages]
+requests = "*"
+autopep8 = "*"
+python-notify = "*"
+numpy = "*"
+pandas = "*"
+tensorflow = "*"
+django = "*"
+pomegranate = "*"
+keras = "*"
+mypy = "*"
+pydocstyle = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-html = "*"
+pylint = "*"
+black = "*"
+mock = "*"
+pymc3 = "*"
+pillow = "*"
+scrapy = "*"
+bs4 = "*"
+twisted = "*"
+scipy = "*"
+scikit-learn = "*"
+matplotlib = "*"
+seaborn = "*"
+nose = "*"
+sympy = "*"
+torch = "*"
+zappa = "*"
+imbalanced-learn = "*"
+dash = "*"
+fire = "*"
+flashtext = "*"
+pur = "*"
+flake8 = "*"
+flawfinder = "*"
+lightgbm = "*"
+snakemake = "*"
+awscli = "*"

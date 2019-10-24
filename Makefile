@@ -1,11 +1,12 @@
 github = https://raw.githubusercontent.com/chrisaddy
 GOPATH = $(HOME)/go-workspace
 
-mac: git homebrew dotfiles go node python
+mac: git homebrew dotfiles go node python rust
 
 zsh:
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-	rm $(HOME)/.zshrc && ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
+	rm -rf $(HOME)/.zshrc
+	ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
 
 xcode:
 	curl -o install-xcode $(github)/bootstrap/master/install-xcode
@@ -20,18 +21,19 @@ git: xcode
 homebrew:
 	/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 	curl -o Brewfile $(github)/bootstrap/master/Brewfile
-	brew bundle
 	brew bundle cleanup --force
 
 vim:
 	rm -rf $(HOME)/.vimrc
-	ln -s $(HOME)/dotfiles/.vimrc $(HOME)/.vimrc
+	rm -rf $(HOME)/.config/nvim
+	mkdir -p $(HOME)/.config/nvim
+	ln -s $(HOME)/dotfiles/.vimrc $(HOME)/.config/nvim/init.vim
+	ln -s $(HOME)/.config/nvim/init.vim $(HOME)/.vimrc
 	nvim +PlugInstall +qall
 
 dotfiles: zsh vim
 	rm -rf $(HOME)/dotfiles
 	cd $(HOME) && git clone git@github.com:chrisaddy/dotfiles.git
-
 
 go:
 	mkdir -p $(GOPATH) $(GOPATH)/src $(GOPATH)/pkg $(GOPATH)/bin
@@ -40,11 +42,11 @@ go:
 node:
 	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
 	curl https://www.npmjs.com/install.sh | sh
-
+	cat node-requirements.txt | xargs npm install -g
 
 python:
-	pip3 install --upgrade pip
-	pip3 install -q -r requirements.txt
+	curl -o Pipfile $(github)/bootstrap/master/Pipfile
+	pip install pipenv
 
 rust:
 	curl https://sh.rustup.rs -sSf | sh -s -- \
