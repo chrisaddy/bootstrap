@@ -5,8 +5,7 @@ mac: git homebrew dotfiles go node python rust
 
 zsh:
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-	rm -rf $(HOME)/.zshrc
-	ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
+	rm -rf $(HOME)/.zshrc ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
 
 xcode:
 	curl -o install-xcode $(github)/bootstrap/master/install-xcode
@@ -14,8 +13,6 @@ xcode:
 	bash -c "./install-xcode"
 
 git: xcode
-	git config --global github.username chrisaddy
-	git config --global user.email chris.william.addy@gmail.com
 
 
 homebrew:
@@ -31,9 +28,10 @@ vim:
 	ln -s $(HOME)/.config/nvim/init.vim $(HOME)/.vimrc
 	nvim +PlugInstall +qall
 
-dotfiles: zsh vim
+dotfiles: git zsh vim
 	rm -rf $(HOME)/dotfiles
 	cd $(HOME) && git clone git@github.com:chrisaddy/dotfiles.git
+	rm -rf $(HOME)/.gitconfig && ln -s $(HOME)/dotfiles/.gitconfig
 
 go:
 	mkdir -p $(GOPATH) $(GOPATH)/src $(GOPATH)/pkg $(GOPATH)/bin
@@ -51,13 +49,12 @@ python:
 rust:
 	curl https://sh.rustup.rs -sSf | sh -s -- \
 		--verbose --default-toolchain=nightly --profile=complete -y
-	source $(HOME)/.cargo/env
-
 
 update:
-	cd $(HOME)/vimrc && git pull origin master
+	upgrade_oh_my_zsh
+	cd $(HOME)/dotfiles/.vimrc && git pull origin master
 	brew bundle
-	# node
+	# npm
 	npm install npm@latest -g
 	#python
 	pip3 install --upgrade pip
