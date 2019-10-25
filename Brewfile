@@ -209,6 +209,11 @@ brew "tesseract"
 brew "tesseract-lang"
 
 
+### cloud stuff
+##### serverless stuff
+brew "serverless"
+
+
 ## terminal/shell
 brew "nushell"
 brew "terminator"
@@ -265,6 +270,16 @@ brew "jq"
 brew "jsawk" # Like awk, but for JSON, using JavaScript objects and arrays
 brew "jsonlint"
 brew "jsonnet"
+
+
+### python
+###### linting
+brew "autopep8"
+brew "black"
+brew "flake8"
+brew "snakemake"
+
+brew "mypy"
 
 ### JavaScript
 brew "eslint"

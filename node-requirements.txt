@@ -1,5 +1,4 @@
 generate-schema
-serverless
 react-native-cli
 aws-cdk
 eslint
