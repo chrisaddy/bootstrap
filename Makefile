@@ -31,7 +31,16 @@ vim:
 	ln -s $(HOME)/.config/nvim/init.vim $(HOME)/.vimrc
 	nvim +PlugInstall +qall
 
-dotfiles: zsh vim
+emacs:
+	rm -rf $(HOME)/.emacs.d $(HOME)/.doom.d
+	git clone https://github.com/hlissner/doom-emacs $(HOME)/.emacs.d
+	$(HOME)/.emacs.d/bin/doom install -y
+
+
+schedule:
+	crontab < $(HOME)/dotfiles/crons
+
+dotfiles: zsh vim emacs schedule
 	rm -rf $(HOME)/dotfiles
 	cd $(HOME) && git clone git@github.com:chrisaddy/dotfiles.git
 
