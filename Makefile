@@ -5,7 +5,7 @@ mac: git homebrew dotfiles go node python rust bin orgs
 
 zsh:
 	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
-	rm -rf $(HOME)/.zshrc ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
+	rm -rf $(HOME)/.zshrc && ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
 
 xcode:
 	curl -o install-xcode $(github)/bootstrap/master/install-xcode

@@ -5,6 +5,9 @@ cask "adoptopenjdk"
 tap "aws/tap"
 brew "aws-sam-cli"
 
+tap "sachaos/todoist"
+brew "todoist"
+
 brew "wifi-password"
 brew "zsh-git-prompt"
 brew "zsh-lovers"
