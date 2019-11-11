@@ -2,9 +2,16 @@ github = https://raw.githubusercontent.com/chrisaddy
 GOPATH = $(HOME)/go-workspace
 
 mac: git homebrew dotfiles go node python rust bin orgs
+	mkdir projects
+
+
+arch: dotfiles go node python rust bin orgs
+	mkdir -p projects
+	ln -s ~/dotfiles/.Xmodmap ~/.Xmodmap
 
 zsh:
-	curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+	curl -Lo install.sh https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+	sh install.sh
 	rm -rf $(HOME)/.zshrc && ln -s $(HOME)/dotfiles/.zshrc $(HOME)/.zshrc
 
 xcode:
