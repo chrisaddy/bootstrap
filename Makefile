@@ -41,6 +41,7 @@ emacs:
 	rm -rf $(HOME)/.emacs.d $(HOME)/.doom.d
 	git clone https://github.com/hlissner/doom-emacs $(HOME)/.emacs.d
 	$(HOME)/.emacs.d/bin/doom install -y
+	ln -s $(HOME)/dotfiles/emacs/config.el $(HOME)/.doom.d/config.el
 
 
 schedule:
