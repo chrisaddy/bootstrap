@@ -292,3 +292,6 @@ brew "jsmin"
 ### TO-DO/NOTES
 brew "task-spooler" # Batch system to run tasks one after another
 brew "when" # Tiny personal calendar
+
+brew "tmuxinator"
+brew "newman"
